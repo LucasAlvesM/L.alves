@@ -1,0 +1,178 @@
+
+.container{
+
+    width: 1200px;
+    margin: 20px auto;
+    columns: 4;
+    column-gap: 40px;
+
+}
+.container .box{
+
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 10px;
+    background: #fff;
+    overflow: hidden; 
+    break-inside: avoid;
+
+}
+.container .box img{
+    max-width: 100%;
+}
+
+.container .box h2{
+margin: 10px 0 0 ;
+padding: 0;
+font-size: 20px;
+}
+.container .box p{
+margin: 0;
+padding: 0 0 10px;
+font-size: 16px;
+}
+
+
+.precos{ 
+    display: flex;
+}
+
+@media (max-width: 1200px)
+{
+    .container{
+        columns: 3;
+        width: calc(100% - 40px);
+        box-sizing: border-box;
+        padding: 20px 20px 20px 0; 
+    }
+}
+@media (max-width: 768px)
+{
+    .container{
+        columns: 2; 
+    }
+}
+@media (max-width: 480px)
+{
+    .container{
+        columns: 1;
+    }
+}
+
+
+.planos{
+
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.planos .box2{
+    position: relative;
+    background: #fff;
+    padding: 20px 40px 40px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px; 
+}
+
+.planos .box2:nth-child(1){
+    background: linear-gradient(45deg,#fff,#333,#70706f,#fff)
+}
+
+
+.planos .box2:nth-child(2){
+    background: linear-gradient(45deg,#fff,#333,#70706f,#fff)
+}
+
+.planos .box2:nth-child(3){
+    background: linear-gradient(45deg,#fff,#333,#70706f,#fff)
+}
+.planos .box2 h2{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    color: #fff;
+    z-index: 1;
+    opacity: 0.4
+}
+
+.planos.box2 h3{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+
+}
+
+
+.planos.box2 p{
+    margin: 0;
+    padding: 0;
+    color:#fff;
+    font-size: 18px;
+    text-align: left;
+}
+
+.h1{
+   
+    padding: 0;
+
+}
+.precos{
+    padding: 20px;
+    border-bottom: 1px solid #000;
+}
+.h1 h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #000;
+}
+
+.h2{
+    border-top: 1px solid #000;
+    padding: 0;
+
+}
+.h2 h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #000;
+}
+.precos{
+    padding: 20px;
+    border-bottom: 1px solid #000;
+}
+.card{
+    
+    padding: 20px;
+    border-bottom: 1px solid #000;
+}
+.imagens-galeria{
+    padding-top:0;
+    padding-bottom: 20px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid #000;
+}
+.h3{
+    
+    padding: 0;
+    margin-left: 50px;
+    margin-right: 50px; 
+
+}
+.h3 h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #000;
+}
